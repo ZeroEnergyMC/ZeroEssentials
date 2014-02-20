@@ -9,13 +9,13 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 public class PlayerListener implements Listener {
-	
+
 	public Main plugin;
-	
+
 	public PlayerListener(Main instance){
 		plugin = instance;
 	}
-	
+
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerJoin(PlayerJoinEvent e){
 		Player player = e.getPlayer();
@@ -25,7 +25,5 @@ public class PlayerListener implements Listener {
 	public void onPlayerQuit(PlayerQuitEvent e){
 		Player player = e.getPlayer();
 		e.setQuitMessage(ChatColor.GOLD + player.getName() + ChatColor.RED + " logged out!");
-	
 	}
-	
 }

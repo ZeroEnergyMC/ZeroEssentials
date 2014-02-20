@@ -12,3 +12,4 @@ commands:
     Permission: zessentials.vote
   Heal:
     Description: Heals yourself.
+  Warps:
