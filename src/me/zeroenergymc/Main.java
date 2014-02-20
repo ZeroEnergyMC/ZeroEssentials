@@ -1,5 +1,6 @@
 package me.zeroenergymc;
 
+import java.util.HashMap;
 import java.util.logging.Logger;
 
 import org.bukkit.Bukkit;
@@ -17,19 +18,22 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 
 
-public class ZeroEssentials extends JavaPlugin implements Listener {
+public class Main extends JavaPlugin implements Listener {
 	
 	private PlayerListener PlayerListener = new PlayerListener(this);
 	
 	Logger consoleLogger = Bukkit.getLogger();
+	MyConfigManager manager;
+	MyConfig playersConfig;
 	String pl = "ZeroEssentials";
 	String ver = "1.0";
-	
+	HashMap<String, MyConfig> playerConfig = new HashMap<String, MyConfig>();
 	
 	public void onEnable() {
 		consoleLogger.info(pl + " enabled version: " + ver);
 		PluginManager pm = getServer().getPluginManager();
-		pm.registerEvents(this.PlayerListener, this);
+		manager = new MyConfigManager(this);
+		playersConfig = manager.getNewConfig("Players.yml", new String[] {"ZeroEssentials", "by ZeroEnergyMC", "1.0 - Alpha"});
 	}
 	
 	public void onDisable() {

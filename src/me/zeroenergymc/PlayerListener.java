@@ -10,9 +10,9 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 public class PlayerListener implements Listener {
 	
-	public ZeroEssentials plugin;
+	public Main plugin;
 	
-	public PlayerListener(ZeroEssentials instance){
+	public PlayerListener(Main instance){
 		plugin = instance;
 	}
 	
