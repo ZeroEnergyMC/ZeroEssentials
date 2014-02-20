@@ -1,7 +1,7 @@
 name: ZeroEssentials
 version: 1.0
 description: Basic server Essentials.
-main: me.zeroenergymc.ZeroEssentials
+main: me.zeroenergymc.Main
 
 commands:
   hd:
