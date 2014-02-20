@@ -96,7 +96,12 @@ public class ZeroEssentials extends JavaPlugin implements Listener {
 
 
 			}
-	
+		
+		if (cmd.getName().equalsIgnoreCase("heal"))
+		{
+			player.setHealth(20D);
+			player.sendMessage(ChatColor.GREEN + "You have been healed!");
+		}
 		return false;
 	}
 }
