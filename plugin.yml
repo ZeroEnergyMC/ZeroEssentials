@@ -1,0 +1,12 @@
+name: ZeroEssentials
+version: 1.0
+description: Basic server Essentials.
+main: me.zeroenergymc.ZeroEssentials
+
+commands:
+  hd:
+    Description: Grab a players head.
+    Permission: hd.use
+  Vote:
+    Description: Vote for the server.
+    Permission: zessentials.vote
