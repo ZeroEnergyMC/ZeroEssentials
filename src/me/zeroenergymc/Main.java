@@ -133,14 +133,15 @@ public class Main extends JavaPlugin implements Listener {
 			
 			Inventory powerinv = Bukkit.createInventory(null, 9, ChatColor.BLUE + "Warps");
 			((Player) sender).openInventory(powerinv);
-			ItemStack blink = new ItemStack(Material.EYE_OF_ENDER);
-			ItemMeta name1 = blink.getItemMeta();
-			name1.setDisplayName("End");   
+			
+			ItemStack eye = new ItemStack(Material.EYE_OF_ENDER);
+			ItemMeta warp1 = eye.getItemMeta();
+			warp1.setDisplayName(ChatColor.AQUA + "The End");   
 			List<String> lore = new ArrayList<String>();
-			lore.add("Teleports you to the End");
-			blink.setItemMeta(name1);
-			name1.setLore(lore);
-			powerinv.addItem(blink);
+			lore.add("Teleports you to the End!");
+			warp1.setLore(lore);
+			eye.setItemMeta(warp1);
+			powerinv.addItem(eye);
 			
 
 		}
