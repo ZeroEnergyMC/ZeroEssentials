@@ -69,7 +69,7 @@ public class Main extends JavaPlugin implements Listener {
 
 		if (cmd.getName().equalsIgnoreCase("vote")){
 			player.sendMessage(ChatColor.GREEN + "You can vote for the server for rewards! Click the link below.");
-			player.sendMessage(ChatColor.AQUA + "http://is.gd/ALeA6j");
+			player.sendMessage(ChatColor.AQUA + "http://is.gd/J2BK9S");
 		}
 
 		if (cmd.getName().equalsIgnoreCase("hd")){
