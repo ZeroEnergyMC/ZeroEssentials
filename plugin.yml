@@ -13,3 +13,6 @@ commands:
   Heal:
     Description: Heals yourself.
   Warps:
+    Description: Warps
+  Help:
+    Description: Help menu
